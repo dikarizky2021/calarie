@@ -5,14 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi Badan"
+        android:id="@+id/tinggiBadan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Berat Badan"
+        android:id="@+id/beratBadan"
+        app:layout_constraintTop_toBottomOf="@id/tinggiBadan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Kelamin"
+        android:id="@+id/jenisKelamin"
+        app:layout_constraintTop_toBottomOf="@id/beratBadan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usia"
+        android:id="@+id/usia"
+        app:layout_constraintTop_toBottomOf="@id/jenisKelamin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:id="@+id/tombolHitung"
+        app:layout_constraintTop_toBottomOf="@id/usia"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Hasil"
+        android:id="@+id/textHasil"
+        app:layout_constraintTop_toBottomOf="@id/tombolHitung"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
