@@ -14,7 +14,19 @@
         android:theme="@style/Theme.Calarie"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".TargetDiet"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".HitungBBI"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

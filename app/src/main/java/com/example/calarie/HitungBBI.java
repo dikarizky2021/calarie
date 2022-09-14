@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class HitungBBI extends AppCompatActivity {
 
     EditText txtTinggi, txtBerat, txtKelamin, txtUsia;
     Button hitung;
