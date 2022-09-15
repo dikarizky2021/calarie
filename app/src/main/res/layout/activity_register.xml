@@ -5,5 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:id="@+id/regNama"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Lahir"
+        android:id="@+id/regTTL"
+        app:layout_constraintTop_toBottomOf="@id/regNama"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Kelamin"
+        android:id="@+id/regJK"
+        app:layout_constraintTop_toBottomOf="@id/regTTL"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:id="@+id/regUsername"
+        app:layout_constraintTop_toBottomOf="@id/regJK"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/regPassword"
+        app:layout_constraintTop_toBottomOf="@id/regUsername"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:id="@+id/tombolDaftar"
+        app:layout_constraintTop_toBottomOf="@id/regPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

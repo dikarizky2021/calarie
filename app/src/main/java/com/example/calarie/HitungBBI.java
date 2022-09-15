@@ -3,6 +3,7 @@ package com.example.calarie;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +18,7 @@ public class HitungBBI extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_hitung_bbi);
 
         txtTinggi=findViewById(R.id.tinggiBadan);
         txtBerat=findViewById(R.id.beratBadan);
@@ -33,6 +34,7 @@ public class HitungBBI extends AppCompatActivity {
                 double berat=Double.parseDouble(txtBerat.getText().toString());
                 String kelamin=txtKelamin.getText().toString();
                 double usia=Double.parseDouble(txtUsia.getText().toString());
+
 
                 txtHasil.setText( "hasil: "+BBI(tinggi,berat,kelamin,usia));
             }
